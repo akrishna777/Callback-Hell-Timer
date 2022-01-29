@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'digital-clock-font' ;
+    src: url(/digital-7.ttf);
+}
+.body{
+    font-family: digital-clock-font;
+    
+}
+
+.main-container{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+    
+    width: fit-content;
+    position: relative;
+    top : 267px;
+    left: 31px;
+    font-family: digital-clock-font;
+    font-size: 68px;
+    color: rgb(80, 80, 80);
+    transform: skew(-5deg);
+    transform: rotate(-7deg);
+}
+
+.container3 {
+    
+    width: fit-content;
+    position: relative;
+    top : -213px;
+    left: -51px;
+    font-family: digital-clock-font;
+    font-size: 68px;
+    color: rgb(80, 80, 80);
+    transform: skew(-5deg);
+    transform: rotate(-8deg);
+
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* //Independence Animation */
+
+@keyframes flagIt
+{
+  0%{width:0px} 
+  100%{width:500px}
+} 
+
+@keyframes flagText
+{
+  from{opacity:0.0}
+  to{opacity:1}
+}
+ 
+#chakra
+{
+  opacity:0.0;
+  animation-name:flagText;
+  animation-duration:.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
+  height: 100px;
+  width: 100px;
+}
+
+#d{
+  width: 0;
+}
+
+#d1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#d2{
+  width: 0;
+}
+
+.division
+{
+  margin:auto; 
+  width:100px; height:100px; 
+  animation-name:flagIt;
+  animation-duration:5s;
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+  margin: 0;
+}
+      
+#text
+{
+  animation-name: flagText;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-delay:2s;
+  width:auto;
+  font-size:25px;
+  font-family:"Arial Black", Gadget, sans-serif;
+  padding-top:50px;
+  opacity:0.0;
+  font-family: 'Rouge Script', cursive;
+  font-size: 70px;
+}
+
+.contain{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
